@@ -99,3 +99,4 @@ export const AdminStoragePage: React.FC = () => {
     </div>
   )
 }
+

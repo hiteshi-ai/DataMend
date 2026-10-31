@@ -225,11 +225,10 @@ export const InsightsPage: React.FC = () => {
       <div className="flex items-center gap-2 border-b border-gray-200/50 pb-2">
         <button
           onClick={() => setActiveTab('stats')}
-          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-            activeTab === 'stats'
-              ? 'bg-[var(--color-accent)] text-white shadow-sm'
-              : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
-          }`}
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${activeTab === 'stats'
+            ? 'bg-[var(--color-accent)] text-white shadow-sm'
+            : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
+            }`}
         >
           <TableIcon className="w-4 h-4" />
           <span>{t('insights.statistics', 'Descriptive Statistics')}</span>
@@ -237,11 +236,10 @@ export const InsightsPage: React.FC = () => {
 
         <button
           onClick={() => setActiveTab('charts')}
-          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-            activeTab === 'charts'
-              ? 'bg-[var(--color-accent)] text-white shadow-sm'
-              : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
-          }`}
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${activeTab === 'charts'
+            ? 'bg-[var(--color-accent)] text-white shadow-sm'
+            : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
+            }`}
         >
           <LineChart className="w-4 h-4" />
           <span>{t('insights.charts', 'Interactive Plotly Charts')}</span>
@@ -252,11 +250,10 @@ export const InsightsPage: React.FC = () => {
             setActiveTab('compare')
             if (compVersion1 && compVersion2) handleCompare()
           }}
-          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-            activeTab === 'compare'
-              ? 'bg-[var(--color-accent)] text-white shadow-sm'
-              : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
-          }`}
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${activeTab === 'compare'
+            ? 'bg-[var(--color-accent)] text-white shadow-sm'
+            : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
+            }`}
         >
           <GitCompare className="w-4 h-4" />
           <span>{t('insights.compare', 'Historical Comparison')}</span>
@@ -285,11 +282,10 @@ export const InsightsPage: React.FC = () => {
                     <button
                       key={col}
                       onClick={() => setSelectedCol(col)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${
-                        selectedCol === col
-                          ? 'bg-[var(--color-accent)] text-white shadow-sm'
-                          : 'bg-white/80 dark:bg-black/30 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300'
-                      }`}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${selectedCol === col
+                        ? 'bg-[var(--color-accent)] text-white shadow-sm'
+                        : 'bg-white/80 dark:bg-black/30 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300'
+                        }`}
                     >
                       {col} {isNum ? '(#)' : '(A)'}
                     </button>

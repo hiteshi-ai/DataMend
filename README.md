@@ -229,3 +229,4 @@ npm run build
 - **Private Storage**: Datasets are never publicly accessible via direct URLs. Access is mediated by server-side verification and short-lived signed URLs.
 - **Admin Verification**: Role checks (`role === 'admin'`) occur strictly on the backend. Client-side state cannot grant administrative permissions.
 - **Tamper-Evident Audit Logging**: Administrative interventions (suspensions, setting modifications, deletions) are recorded with timestamps, actor IDs, and action metadata.
+

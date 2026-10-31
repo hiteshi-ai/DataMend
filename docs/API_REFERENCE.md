@@ -96,3 +96,4 @@ All authenticated endpoints require an `Authorization: Bearer <token>` header.
 | PUT | `/api/admin/settings` | Update system limits and policies |
 | GET | `/api/admin/audit-logs` | Retrieve immutable audit log entries |
 | POST | `/api/admin/announcements` | Publish broadcast announcement |
+

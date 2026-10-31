@@ -268,3 +268,4 @@ export const HowToUsePage: React.FC = () => {
     </div>
   )
 }
+

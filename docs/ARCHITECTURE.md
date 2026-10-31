@@ -75,3 +75,4 @@ flowchart TD
 1. **Non-Destructive Versioning**: Original uploaded datasets are stored in private storage as version 1 (`is_original = true`). Cleaned outputs are written as new versioned artifacts (v2, v3, etc.).
 2. **Deterministic Predefined Operations**: Arbitrary AI-generated Python code is never directly executed. Natural language prompts are translated into validated, structured operation plans (`remove_duplicates`, `fill_missing`, `convert_dtype`, `trim_whitespace`, `filter_rows`, etc.).
 3. **Reproducibility**: Analysis runs generate a standalone Python script utilizing standard Pandas operations, allowing users to execute the exact cleaning pipeline independently in their own environments.
+

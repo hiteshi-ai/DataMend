@@ -441,3 +441,4 @@ async def list_announcements() -> List[Dict[str, Any]]:
     """List active announcements for users and admins."""
     resp = supabase_admin.table("announcements").select("*").eq("is_active", True).order("created_at", desc=True).execute()
     return resp.data or []
+

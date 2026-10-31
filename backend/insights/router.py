@@ -544,3 +544,4 @@ async def get_chart_recommendations(
         })
 
     return recommendations
+
